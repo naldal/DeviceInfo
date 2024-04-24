@@ -9,7 +9,8 @@ let package = Package(
     products: [
         .library(
             name: "iOSDeviceInfo",
-            targets: ["iOSDeviceInfo"]),
+            targets: ["iOSDeviceInfo"]
+        ),
     ],
     targets: [
         .target(
@@ -17,6 +18,7 @@ let package = Package(
         ),
         .testTarget(
             name: "iOSDeviceInfoTests",
-            dependencies: ["iOSDeviceInfo"]),
+            dependencies: ["iOSDeviceInfo"]
+        ),
     ]
 )
