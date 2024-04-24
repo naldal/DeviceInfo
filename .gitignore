@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/xcode,swift,swiftpackagemanager
-# Edit at https://www.toptal.com/developers/gitignore?templates=xcode,swift,swiftpackagemanager
+# Created by https://www.toptal.com/developers/gitignore/api/swift,swiftpm,swiftpackagemanager,xcode
+# Edit at https://www.toptal.com/developers/gitignore?templates=swift,swiftpm,swiftpackagemanager,xcode
 
 ### Swift ###
 # Xcode
@@ -91,6 +91,9 @@ xcuserdata
 *.xcodeproj
 
 
+### SwiftPM ###
+
+
 ### Xcode ###
 
 ## Xcode 8 and earlier
@@ -104,4 +107,4 @@ xcuserdata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/xcode,swift,swiftpackagemanager
+# End of https://www.toptal.com/developers/gitignore/api/swift,swiftpm,swiftpackagemanager,xcode
