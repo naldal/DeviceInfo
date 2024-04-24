@@ -7,12 +7,12 @@
 
 import UIKit
 
-internal extension DeviceInfo {
+public extension DeviceInfo {
   struct Battery {}
 }
 
 
-internal extension DeviceInfo.Battery {
+public extension DeviceInfo.Battery {
   
   static var level: Float {
     UIDevice.current.isBatteryMonitoringEnabled = true
