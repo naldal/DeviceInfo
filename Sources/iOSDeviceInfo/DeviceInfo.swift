@@ -40,5 +40,9 @@ public struct DeviceInfo {
     Self.Network.isCellularConnected
   }
   
+  static var ipAddress: String? {
+    Self.Network.ipAddress
+  }
+  
 }
 
