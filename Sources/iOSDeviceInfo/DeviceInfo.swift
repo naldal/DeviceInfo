@@ -10,38 +10,60 @@ import UIKit
 public struct DeviceInfo { 
   
   
-  // MARK: - battery
+  // MARK: - BATTERY
   
   static var batteryLevel: Float {
-    Self.Battery.level
+    Battery.level
   }
   
   static var batteryState: UIDevice.BatteryState {
-    Self.Battery.state
+    Battery.state
   }
   
   static var batteryPercentage: Int {
     get throws {
-      try Self.Battery.levelPercentage
+      try Battery.levelPercentage
     }
   }
   
-  // MARK: - network
+  // MARK: - NETWORK
   
   static var isNetworkConnected: Bool {
-    Self.Network.isConnected
+    Network.isConnected
   }
   
   static var isWifiConnected: Bool {
-    Self.Network.isWiFiConnected
+    Network.isWiFiConnected
   }
   
   static var isCellularConnected: Bool {
-    Self.Network.isCellularConnected
+    Network.isCellularConnected
   }
   
   static var ipAddress: String? {
-    Self.Network.ipAddress
+    Network.ipAddress
+  }
+  
+  // MARK: - SPEC
+  
+  static var cpuInfo: String {
+    SpecInfo.cpuInfo
+  }
+  
+  static var ramCapacity: String {
+    SpecInfo.ramCapacity
+  }
+  
+  static var storageCapacity: String {
+    SpecInfo.storageCapacity
+  }
+  
+  static var screenResolution: String {
+    SpecInfo.screenResolution
+  }
+  
+  static var screenSize: String {
+    SpecInfo.screenSize
   }
   
 }

@@ -8,13 +8,11 @@
 import UIKit
 import SystemConfiguration
 
-public extension DeviceInfo {
+internal extension DeviceInfo {
   struct Network {}
 }
 
-public extension DeviceInfo.Network {
-  
-  // MARK: - public properties
+internal extension DeviceInfo.Network {
   
   static var isConnected: Bool {
     guard let reachability = SCNetworkReachabilityCreateWithName(nil, "www.apple.com") else {
