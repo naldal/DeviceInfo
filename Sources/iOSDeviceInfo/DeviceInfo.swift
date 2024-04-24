@@ -9,6 +9,9 @@ import UIKit
 
 public struct DeviceInfo { 
   
+  
+  // MARK: - battery
+  
   static var batteryLevel: Float {
     Self.Battery.level
   }
@@ -21,6 +24,20 @@ public struct DeviceInfo {
     get throws {
       try Self.Battery.levelPercentage
     }
+  }
+  
+  // MARK: - network
+  
+  static var isNetworkConnected: Bool {
+    Self.Network.isConnected
+  }
+  
+  static var isWifiConnected: Bool {
+    Self.Network.isWiFiConnected
+  }
+  
+  static var isCellularConnected: Bool {
+    Self.Network.isCellularConnected
   }
   
 }
