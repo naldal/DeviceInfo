@@ -12,15 +12,15 @@ public struct DeviceInfo {
   
   // MARK: - BATTERY
   
-  static var batteryLevel: Float {
+  public static var batteryLevel: Float {
     Battery.level
   }
   
-  static var batteryState: UIDevice.BatteryState {
+  public static var batteryState: UIDevice.BatteryState {
     Battery.state
   }
   
-  static var batteryPercentage: Int {
+  public static var batteryPercentage: Int {
     get throws {
       try Battery.levelPercentage
     }
@@ -28,41 +28,41 @@ public struct DeviceInfo {
   
   // MARK: - NETWORK
   
-  static var isNetworkConnected: Bool {
+  public static var isNetworkConnected: Bool {
     Network.isConnected
   }
   
-  static var isWifiConnected: Bool {
+  public static var isWifiConnected: Bool {
     Network.isWiFiConnected
   }
   
-  static var isCellularConnected: Bool {
+  public static var isCellularConnected: Bool {
     Network.isCellularConnected
   }
   
-  static var ipAddress: String? {
+  public static var ipAddress: String? {
     Network.ipAddress
   }
   
   // MARK: - SPEC
   
-  static var cpuInfo: String {
+  public static var cpuInfo: String {
     SpecInfo.cpuInfo
   }
   
-  static var ramCapacity: String {
+  public static var ramCapacity: String {
     SpecInfo.ramCapacity
   }
   
-  static var storageCapacity: String {
+  public static var storageCapacity: String {
     SpecInfo.storageCapacity
   }
   
-  static var screenResolution: String {
+  public static var screenResolution: String {
     SpecInfo.screenResolution
   }
   
-  static var screenSize: String {
+  public static var screenSize: String {
     SpecInfo.screenSize
   }
   
