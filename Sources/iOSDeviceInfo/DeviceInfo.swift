@@ -12,15 +12,15 @@ public struct DeviceInfo {
   
   // MARK: - BATTERY
   
-  static var batteryLevel: Float {
+  public static var batteryLevel: Float {
     Battery.level
   }
   
-  static var batteryState: UIDevice.BatteryState {
+  public static var batteryState: UIDevice.BatteryState {
     Battery.state
   }
   
-  static var batteryPercentage: Int {
+  public static var batteryPercentage: Int {
     get throws {
       try Battery.levelPercentage
     }
